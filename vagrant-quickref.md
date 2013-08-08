@@ -16,11 +16,11 @@
 
 **vagrant box list**
 
-**vagrant box remove** _NAME_ [_PROVIDER_]
+**vagrant box remove** _NAME_ [ _PROVIDER_]
 
 **vagrant box repackage** _NAME_ _PROVIDER_
 
-**vagrant init** [_NAME_ [_URL_]]
+**vagrant init** [ _NAME_ [ _URL_]]
 
 **vagrant up**
 
@@ -32,15 +32,15 @@
 
 **vagrant resume**
 
-**vagrant reload** [--no-provision | --provision-with _PROV1_,_PROV2_,_..._]
+**vagrant reload** [--no-provision | --provision-with _PROV1_, _PROV2_, _..._]
 
 **vagrant halt** [-f | --force]
 
 **vagrant status**
 
-**vagrant provision** _NAME_ [--provision-with _PROV1_,_PROV2_,_..._]
+**vagrant provision** _NAME_ [--provision-with _PROV1_, _PROV2_, _..._]
 
-**vagrant package** [--base _NAME_ [--output _NAME_ [--include _FILE1_,_FILE2_,_..._ [--vagrantfile _FILE_]]]]
+**vagrant package** [--base _NAME_ [--output _NAME_ [--include _FILE1_, _FILE2_, _..._ [--vagrantfile _FILE_]]]]
 > Create a re-usable box image from the current environment.
 
 **vagrant plugin install** _NAME_

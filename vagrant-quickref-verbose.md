@@ -10,7 +10,7 @@ BOX
 **vagrant box list**
 > Lists all the boxes that are installed into Vagrant.
 
-**vagrant box remove** _NAME_ [_PROVIDER_]
+**vagrant box remove** _NAME_ [ _PROVIDER_]
 > Removes a box from Vagrant that matches the given name and provider.
 
 **vagrant box repackage** _NAME_ _PROVIDER_
@@ -32,12 +32,12 @@ HALT
 
 INIT
 ----
-**vagrant init** [_NAME_ [_URL_]]
+**vagrant init** [ _NAME_ [ _URL_]]
 > Initializes the current directory to be a Vagrant environment by creating an initial Vagrantfile if one doesn't already exist. If arguments are given, it will prepopulate the config.vm.box and config.vm.box_url settings in the created Vagrantfile.
 
 PACKAGE
 -------
-**vagrant package** [--base _NAME_ [--output _NAME_ [--include _FILE1_,_FILE2_,_..._ [--vagrantfile _FILE_]]]]
+**vagrant package** [--base _NAME_ [--output _NAME_ [--include _FILE1_, _FILE2_, _..._ [--vagrantfile _FILE_]]]]
 > Packages a currently running VirtualBox environment into a re-usable box. This command cannot be used with any other provider. 
 
 > --base _NAME_ - Instead of packaging a VirtualBox machine that Vagrant manages, this will package a VirtualBox machine that VirtualBox manages. NAME should be the name or UUID of the machine from the VirtualBox GUI.
@@ -66,10 +66,10 @@ PLUGIN
 
 PROVISION
 ---------
-**vagrant provision** [--provision-with _PROV1_,_PROV2_,_..._]
+**vagrant provision** [--provision-with _PROV1_, _PROV2_, _..._]
 > Runs any configured provisioners against the running Vagrant managed machine.
 
-> --provision-with _PROV1_,_PROV2_,_..._ - This will only run the given provisioners. For example, if you have a :shell and :chef_solo provisioner and run vagrant provision --provision-with shell, only the shell provisioner will be run.
+> --provision-with _PROV1_, _PROV2_, _..._ - This will only run the given provisioners. For example, if you have a :shell and :chef_solo provisioner and run vagrant provision --provision-with shell, only the shell provisioner will be run.
 
 RELOAD
 ------
