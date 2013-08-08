@@ -4,8 +4,8 @@
 
 BOX
 ---
-**vagrant box add** [--provider _PROVIDER_] _NAME_ _URL_
-> Adds the given _URL_ (or file) to Vagrant and stores it under the logical name _NAME_. _PROVIDER_, if given, will verify the box is for the given provider (virtual machine, e.g., VirtualBox, VMWare).By default, Vagrant automatically detects the proper provider to use.
+**vagrant box add** [--provider _PROVIDER_ [--insecure]] _NAME_ _URL_
+> Adds the given _URL_ (or file) to Vagrant and stores it under the logical name _NAME_. _PROVIDER_, if given, will verify the box is for the given provider (virtual machine, e.g., VirtualBox, VMWare). By default, Vagrant automatically detects the proper provider to use. The `--insecure` option allows you to ignore SSL certificate problems (e.g., for self-signed certs).
 
 **vagrant box list**
 > Lists all the boxes that are installed into Vagrant.
@@ -37,7 +37,7 @@ INIT
 
 PACKAGE
 -------
-**vagrant package** [--base _NAME_ --output _NAME_ --include _FILE1_,_FILE2_,_..._ --vagrantfile _FILE_]
+**vagrant package** [--base _NAME_ [--output _NAME_ [--include _FILE1_,_FILE2_,_..._ [--vagrantfile _FILE_]]]]
 > Packages a currently running VirtualBox environment into a re-usable box. This command cannot be used with any other provider. 
 
 > --base _NAME_ - Instead of packaging a VirtualBox machine that Vagrant manages, this will package a VirtualBox machine that VirtualBox manages. NAME should be the name or UUID of the machine from the VirtualBox GUI.
@@ -58,7 +58,7 @@ PLUGIN
 **vagrant plugin license** _NAME_ _FILE_
 > Installs a license for a proprietary Vagrant plugin, such as the VMware Fusion provider.
 
-**vagrant plugin** list
+**vagrant plugin list**
 > Lists all installed plugins and their respective versions.
 
 **vagrant plugin uninstall** _NAME_
