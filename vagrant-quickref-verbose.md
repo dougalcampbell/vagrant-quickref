@@ -73,7 +73,7 @@ PROVISION
 
 RELOAD
 ------
-**vagrant reload** [--no-provision | --provision-with _PROV1_,_PROV2_,_..._]
+**vagrant reload** [--no-provision | --provision-with _PROV1_, _PROV2_, _..._]
 > The equivalent of running a halt followed by an up. Often done to make changes to the Vagrantfile take effect.
 > 
 > --no-provision - The provisioners will not run.
