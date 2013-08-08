@@ -9,7 +9,7 @@ If you want to print from the GitHub rendered page for one of the files,
 you might want to check out this bookmarklet, which will remove a lot of 
 the extra page decorations:
 
-> https://gist.github.com/binarybana/4454331
+> https://gist.github.com/dougalcampbell/6187288
 
 Paste the JavaScript snippet as a URL in browser bookmark, and put the 
 bookmark on your toolbar. Visit any GitHub markdown file, click the 
