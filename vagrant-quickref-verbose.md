@@ -44,7 +44,7 @@ PACKAGE
 
 > --output _NAME_ - The resulting package will be saved as NAME, default = 'package.box'.
 
-> --include _FILE1_,_FILE2_,_..._ - Additional files to be packaged with the box
+> --include _FILE1_, _FILE2_, _..._ - Additional files to be packaged with the box
 
 > --vagrantfile _FILE_ - Packages a Vagrantfile with the box, that is loaded as part of the Vagrantfile load order when the resulting box is used.
 
@@ -78,7 +78,7 @@ RELOAD
 > 
 > --no-provision - The provisioners will not run.
 
-> --provision-with _PROV1_,_PROV2_,_..._ - This will only run the given provisioners. For example, if you have a :shell and :chef_solo provisioner and run vagrant provision --provision-with shell, only the shell provisioner will be run.
+> --provision-with _PROV1_, _PROV2_, _..._ - This will only run the given provisioners. For example, if you have a :shell and :chef_solo provisioner and run vagrant provision --provision-with shell, only the shell provisioner will be run.
 
 RESUME
 ------
